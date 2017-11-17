@@ -1,0 +1,19 @@
+function truncateString(str, num) {
+  // Clear out that junk in your trunk
+  // var dot = "...";
+   var concat = '';
+  if (num <= 3) {
+    var truncsm = str.slice(0, num);
+    concat = truncsm.concat('...');
+  } else if (num < str.length) {
+    var trunclg = str.slice(0, num-3);
+    concat = trunclg.concat('...');
+  } else {
+    return str;
+  }
+   
+  return concat;
+   
+}
+
+truncateString("A-tisket a-tasket A green and yellow basket", 11);
