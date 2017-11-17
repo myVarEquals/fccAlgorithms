@@ -1,0 +1,13 @@
+function titleCase(str) {
+  var myWords = str.toLowerCase().split(' ');
+  var myNewWords = [];
+  var myNewString = '';
+  for (i = 0; i < myWords.length; i++) {
+    myNewWords.push(myWords[i][0].toUpperCase()+myWords[i].slice(1));
+     
+  }  
+  myNewString = myNewWords.join(' ');
+  return myNewString;
+}
+
+titleCase("IHSFHSDFHSF ASDGASDG ASDGASG ASDGASDG");
