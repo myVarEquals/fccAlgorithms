@@ -1,0 +1,18 @@
+function mutation(arr) {
+  var myArg1 = '';
+  var myArg2 = '';
+  
+  myArg1 = arr[0].toLowerCase();
+  myArg2 = arr[1].toLowerCase();
+  
+  for (i = 0; i < myArg2.length; i++) {
+    if (myArg1.indexOf(myArg2[i]) === -1) 
+      return false;
+    
+  }
+  
+  return true;
+  
+}
+//Check if both words use only the same letters the same letters
+mutation(["hello", "hey"]);
