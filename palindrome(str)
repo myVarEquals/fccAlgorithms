@@ -1,0 +1,18 @@
+
+function palindrome(str) {
+
+  var lowerCase = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+  var palin = lowerCase.replace(/[^a-z0-9]/g, '').split('').reverse().join('');
+ // return lowerCase;
+ 
+  if (palin === lowerCase) {
+    return true;
+  } else {
+    return false;
+  }
+
+  
+}
+
+
+palindrome("1 eye for of 1 eye.");
