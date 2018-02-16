@@ -1,0 +1,35 @@
+var currency = [
+  {name: 'ONE HUNDRED', val: 100},
+  {name: 'TWENTY', val: 20},
+  {name: 'TEN', val: 10},
+  {name: 'FIVE', val: 100},
+  {name: 'ONE', val: 100},
+  {name: 'QUARTER', val: 100},
+  {name: 'DIME', val: 100},
+  {name: 'NICKLE', val: 100},
+  {name: 'PENNY', val: 100},
+];
+
+
+function checkCashRegister(price, cash, cid) {
+  // find total cash in drawer
+ var changeDue = cash - price;
+  // test if cash in drawer is < price
+
+  // test if cash in drawer is === price
+  // else return change required using modulus
+  // return total.toFixed(2);
+}
+
+// Example cash-in-drawer array:
+// [["PENNY", 1.01],
+// ["NICKEL", 2.05],
+// ["DIME", 3.10],
+// ["QUARTER", 4.25],
+// ["ONE", 90.00],
+// ["FIVE", 55.00],
+// ["TEN", 20.00],
+// ["TWENTY", 60.00],
+// ["ONE HUNDRED", 100.00]]
+
+checkCashRegister(19.50, 20.00, [["PENNY", 0.01], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 1.00], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]);
